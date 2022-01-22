@@ -1,0 +1,397 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+
+html{
+    font-size: 15px;
+}
+
+body{
+    background-color: #393939;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+.container{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+ 
+   
+
+}
+
+.holder{
+
+    padding: 1em 2.5em;
+    background-color: #434343;
+    width: 60%;
+    border-radius: 1em;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+form{
+    position: relative;
+}
+
+/* cover photo  img */
+
+.coverphoto-container{
+
+    position: relative;
+    display: flex;
+
+
+}
+
+.cover-img{
+    width: 100%;
+    height: 40vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: relative;
+    border-radius: 1em;
+}
+
+.cover-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    text-align: center;
+    background-color: #00000066;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    border-radius: 0.5em;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  
+
+}
+
+.warning-alert2 {
+    background-color: #d6ac64;
+    color: #751919fd;
+    font-size: 0.9rem;
+
+    font-weight: 100;
+    text-align: none;
+
+    margin: 1em;
+    padding: 0.2em 1em;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 15px px #ccc;
+   
+    text-align: center;
+  }
+
+.cover-button:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.cover-button svg{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+/* profile photo */
+
+
+.profphoto-container{
+    position: relative;
+    margin-top: -5%;
+    
+
+}
+
+
+.prof-photo{
+    width: 6.5em;
+    height: 6.5em;
+    border-radius: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+   
+       position: absolute;
+       bottom: 0%;
+       left: 0%;
+       transform: translate(-10%, 30%);
+    
+   
+
+}
+
+
+
+.prof-button svg{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    vertical-align: middle;
+}
+
+
+.prof-button{
+    background-color: #0000007A;
+    display: inline-block;
+    padding: 0.4em 1em;
+    font-size: 0.8rem;
+    border-radius: 0.5em;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-left: -4%;
+
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transform: translate(100%, 70%);
+ 
+}
+
+.prof-button:hover{
+    background-color: #b1876f;
+}
+
+
+.forms{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    
+}
+
+.password-holder, .confirmpass-holder{
+    position: relative;
+
+}
+
+.togglePass{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    transform: translate(-100%, -150%);
+    margin-right: 2%;
+    
+}
+
+
+/* name form */
+
+.name-holder{
+
+    width: 50%;
+  
+}
+
+.username-holder{
+    width: 50%;
+}
+
+.names{
+    display:flex;
+    flex-direction: row;
+}
+
+.forms label{
+    color: #A89F9F;
+}
+
+ input[type=text], input[type=password], textarea{
+    width: 90%;
+    background-color: #323232;
+    border: 1px solid #464646;
+    border-radius: 0.3em;
+    padding: 1em;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 1em;
+
+
+
+}
+
+/* text area  */
+
+textarea{
+    display:flex;
+    height: 10em;
+    width: 95%;
+    resize: none;
+ 
+}
+
+/* passwords */
+
+.passwords{
+    display:flex;
+    flex-direction: row;
+}
+
+.password-holder{
+
+    width: 50%;
+  
+}
+
+.confirmpass-holder{
+    width: 50%;
+}
+
+/* buttons */
+
+.buttons{ 
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: 2%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
+}
+
+
+
+.save{
+ 
+
+    background-color: #BA5D5D;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 0.5em;
+    margin-left: 1em;
+        
+    transition:  ease 1s;
+
+    
+}
+
+.buttons svg{
+    vertical-align: middle;
+    margin-right: 0.2em;
+
+  
+}
+
+
+
+.save p, .cancel p{
+    vertical-align: middle;
+    display: inline-block;
+
+}
+
+.cancel{
+
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 0.5em;
+        
+    transition:  ease 1s;
+}
+
+.cancel:hover, .save:hover{
+    background-color: #727272;
+}
+
+@media (min-width:1900px) {
+    .togglePass{
+        margin-right: 3em;
+    }
+}
+
+    /* tablets */
+@media (max-width:62em) {
+
+
+    input[type=text], input[type=password]{
+        width: 80%;
+    }
+
+    textarea{
+        width: 90%;
+    }
+}
+
+/* phones */
+
+@media (max-width: 41.75em) {
+
+    html{
+        font-size: 12px;
+    }
+
+    
+
+    .container{
+        width: 100%;
+    }
+
+    .holder{
+        width: 80%;
+        background-color: transparent;
+   
+       
+     }
+    
+    
+    input[type=text], input[type=password]{
+        width: 75%;
+    }
+
+    textarea{
+        width: 88%;
+    }
+
+    .buttons{
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .save, .cancel{
+        padding: 0.5em 1em;
+        width: 50%;
+        margin-left: 0;
+        margin-bottom: 1em;
+        padding: 0.2em 0.3em;
+    }
+
+
+    .cover-img{
+        height: 30vh;
+    }
+
+    .prof-button{
+        transform: translate(80%, 70%);
+    }
+}

@@ -1,0 +1,899 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+
+
+html{
+    font-size: 12px;
+}
+body{
+
+    background-color: #393939;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    color: white;
+    
+}
+
+
+.container{
+    background-color: #434343;
+    width: 70%;
+    height: auto;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    margin-top: 2em;
+   
+    display: flex;
+
+}
+
+.blur{
+    filter: blur(2px);
+}
+
+
+main{
+    width: 70%;
+    margin-left: 3em;
+    padding: 1em;
+    height: fit-content;
+}
+
+
+/* create a post part */
+
+.create-post{
+   background-color: #2D2D2D;
+   border-radius: 1em;
+   margin-top: 2em;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+   color: white;
+   display: flex;
+
+}
+
+
+.create-post-container{
+
+      margin-left: 2em;
+        width: 100%;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+      margin-bottom: 0.5em;
+}
+
+
+.prof-pic{
+
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100%;
+    float: left;
+    margin-top: 1.2em;
+    margin-right: 0.6em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.texts{
+
+    margin-top: -0.5em;
+
+
+}
+
+
+.first-heading{
+    font-size: 2rem; 
+    margin-bottom: 0;
+  }
+
+  .second-heading{
+    font-size: 1.3rem; 
+    color: #D3D3D3;
+    margin-top: -0.2em;
+ }
+
+
+ .plus-icon{
+
+   float: right;
+   margin-top: 0.5em;
+   margin-right: 2em;
+
+ }
+
+
+ /* line */
+
+ .line{
+     border-bottom: 1px solid #838383;
+     margin: 3em;
+ }
+
+ /* all posts */
+
+
+ .all-posts{
+   
+    
+
+ }
+
+ a{
+     text-decoration: none;
+     color: white;
+ }
+
+
+ .post{
+     margin-bottom: 3em;
+     width: 100%;
+     background: #323232;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     border-radius: 1em;
+    
+
+     
+     
+ }
+
+ /* topic category  */
+ .topic{
+    
+    display: flex;
+    flex-direction: row;
+    float: right;
+     margin-right: 2em;
+     margin-top: 1em;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 800;
+     vertical-align: middle;
+   
+     
+ 
+    
+ }
+
+ .topic-icon{
+     margin: 0 0.3em;
+     margin-top: 0.3em;
+     width: 15px;
+     height: 15px;
+ 
+     
+     
+ }
+
+
+
+ .topic i, .topic p{
+    vertical-align: middle;
+    margin-top: 0.3em;
+ }
+
+
+
+ .topic-text{
+     display: inline-block;
+     vertical-align: middle;
+     margin-top: 0;
+     color: #C6B2B2;
+ }
+
+
+ .contents{ 
+    padding-top: 1em;
+ }
+
+ /* user post details */
+ .user{
+      font-weight: 400;
+     
+      margin-left: 1.5em;
+ }
+
+ .user-img{
+     width: 3em;
+     height: 3em;
+     object-fit: cover;
+     border-radius: 100%;
+     float: left;
+     margin-right: 0.5em;
+
+ }
+
+.name-post{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+   
+
+.square{
+    margin-left: 0.5em;
+    font-size: 0.8rem;
+}
+.time{
+    font-size: 0.9rem;
+    margin-left: 0.3em;
+    font-weight: 400;
+}
+
+.username-post{
+    font-size: 0.9rem;
+    margin-left: 0.3em;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+/* .post-contents{
+    padding-left: 1em;
+} */
+
+/* post contents */
+.post-title{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    width: 80%;
+    margin-left: 2em;
+ 
+}
+
+.post-text{
+    font-size: 1rem;
+    font-weight: 400;
+    width: 85%;
+    max-width: 85%;
+    margin-top: 0.3em;
+    margin-left: 3em;
+    margin-right: 1em;
+    padding-right: 1em;
+    color: #C2C2C2;
+ 
+}
+
+.post-img{
+    max-width: 400px;
+    max-height: 300px;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    margin-left: 3em;
+}
+
+/* content actions (comment,like share) */
+
+.content-holder{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.actions-holder{
+    padding-left: 1em;
+    margin: 1em 0;
+}
+
+.share,
+.comment,
+.hands-up{
+    display: inline-block;
+    padding-left: 0.8em;
+    vertical-align: middle;
+}
+
+
+.share1,
+.comment1,
+.hands-up1{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+  .actions-holder p{
+    display: inline-block;
+    vertical-align: middle;
+
+ 
+}
+
+/* right part of the page */
+
+aside{
+    padding: 1em;
+    margin-top: 4em;
+    width: 23%;
+
+}
+
+/* searchbar */
+
+.searchbar-container{
+
+    background: rgba(255, 255, 255, 0.87);
+    width: auto;
+    margin-right: 4%;
+    border-radius: 2em;
+    position: relative;
+}
+
+.search-input{
+    background: none;
+    border: none;
+    vertical-align: middle;
+    padding-left: 1em;
+    margin: 0.5em 0em;
+    height: 100%;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: Nunito;
+  
+}
+
+.search-input::placeholder{
+    color: #838383;
+}
+
+.search-input:focus{
+    background: none;
+    outline: none;
+ 
+
+}
+
+
+.search-button{
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+
+    vertical-align: middle;
+}
+
+
+
+.search-button:hover path{
+    stroke: black;
+}
+
+/* topics */
+
+.topic-list-container{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.topics-heading{
+
+    font-size: 2rem;
+    margin-bottom: 0.3em;
+    color: white;
+}
+
+.button-list button{
+    text-transform:uppercase;
+    font-size: 1rem;
+    padding: 1em;
+    margin: 0.2em;
+
+    border-radius: 0.5em;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.button-list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.relationship{
+    background-color: #BD6E6E;
+}
+
+.chat{
+    background-color: #71CCFF;
+}
+
+.lgbtqia{
+    background-color: #9B41B2;
+}
+
+.depression{
+    background-color: #2C2828;
+}
+
+.mental-health{
+    background-color: #87AA72;
+}
+
+.grief{
+    background-color: #6E6E6E;
+}
+
+.insecurity{
+    background-color: #914747;
+}
+
+.anxiety{
+    background-color: #4B967B;
+}
+
+.friends{
+    background-color: #C18F8F;
+}
+
+.education{
+    background-color: #3A4F86;
+}
+
+.bullying{
+    background-color: #6C6161;
+}
+
+.loneliness{
+    background-color: #6B7E8B;
+}
+
+.health{
+    background-color: #92CCD4;
+}
+
+.happiness{
+    background-color: #DFC53A;
+}
+
+.tiredness{
+    background-color: #7F757A;
+}
+
+.stress{
+    background-color: #987744;
+}
+
+.family{
+    background-color: #DDCC6E;
+}
+
+.frustration{
+    background-color: #693535;
+}
+
+.love{
+    background-color: #C96666;
+}
+
+.pets{
+    background-color: #724C6C;
+}
+
+.others{
+    background-color: #525252;
+}
+
+
+.button-topic{
+    width: auto;
+    height: fit-content;
+    background-color: #161616;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+    padding: 1.3em;
+    display: none;
+    border: none;
+    float: right;
+    margin-top: 3em;
+
+
+
+}
+
+.topic:hover{
+    background-color: white;
+    color: #BA5D5D;
+}
+
+#x-button{
+    background-color: transparent;
+    height: 5em;
+    width: auto;
+    border: none;
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 9999;
+    display: none;
+
+}
+
+/* no post */
+
+
+
+/* media querys */
+
+
+@media(min-width:2000px){
+
+    aside{
+        width: 20%;
+    }
+}
+
+
+@media (min-width:1600px) {
+    
+    html{
+        font-size: 15px;
+    }
+
+
+
+  
+
+
+    
+}
+
+
+/* small laptop screens */
+
+@media (max-width:82em) {
+
+
+
+}
+@media (max-width:64em) {
+
+
+    .topic-button{
+        display: block;
+        z-index: 999;
+    }
+
+ 
+
+}
+
+/* small laptop screens */
+@media (max-width:64em) {
+    html{
+        font-size: 12px;
+     
+    }
+
+ 
+
+    main{
+        width: 100%;
+        
+    }
+    
+
+    
+    aside{
+        width: 0;
+    }
+   
+    #aside{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+       background-color: #292828;
+       width:50%;
+       height: max-content;
+       z-index: 999;
+
+    }
+
+    #topic-button{
+        display: block;
+    
+       
+    }
+
+
+ 
+
+    .container{
+    
+        width: 95%;
+        background-color: transparent;
+        border: none;
+    }
+
+
+    .search{
+        margin: 5em 0 0 1.5em;
+       
+    }
+
+    .searchbar-container{
+        width: 90%;
+        padding: 0.5em 0;
+
+    }
+ 
+
+    .topics-heading{
+        font-size: 2rem;
+        margin-left: 1em;
+    }
+
+    .button-list{
+ 
+        width:80%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 3.5em;
+      
+        margin-right: 3em;
+    }
+
+    .button-list a{
+        font-size: 1.2rem;
+        margin-bottom: 0.5em;
+        margin-right: 1em;
+        padding: 1em;
+    }
+/* 
+    main{
+        backdrop-filter: blur(10px);
+    } */
+
+    .create-post{
+        width: 85%;
+        margin-right: 0;
+    }
+
+    .post-title{
+        width: 90%;
+    }
+
+    .post-text{
+        width: 89%;
+    }
+
+}
+
+/* for phones or smaller screens */
+@media (max-width: 45em) {
+  
+
+
+    html{
+        font-size: 10px;
+     
+    }
+
+   
+
+    main{
+        width: 100%;
+        margin-left: 1em;
+        
+    }
+    
+
+    
+    aside{
+        width: 0;
+
+    }
+   
+    #aside{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+       background-color: #292828;
+       width:40%;
+    
+       z-index: 999;
+       
+     
+    }
+
+    .button-topic{
+        display: block;
+        margin-left: 1em;
+        margin-top: 2em;
+      
+    
+    }
+
+    
+    #searchForm{
+        position: relative;
+        padding-top: 2em;
+    }
+
+
+
+  
+
+    .topic-button{
+        width: 20px;
+        height: 20px;
+    }
+
+    .container{
+        height: 90vh;
+        width: 95%;
+        border: none;
+        background-color: transparent;
+    }
+
+
+    .search{
+        margin: 5em 0 0 1.5em;
+       
+    }
+
+    .searchbar-container{
+        width: 90%;
+
+    }
+ 
+
+    .topics-heading{
+        font-size: 2rem;
+        margin-left: 1em;
+    }
+
+    .button-list{
+ 
+        width:80%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 3.5em;
+      
+        margin-right: 3em;
+    }
+
+    .button-list a{
+        font-size: 1.2rem;
+        margin-bottom: 0.5em;
+        margin-right: 1em;
+        padding: 1em;
+    }
+/* 
+    main{
+        backdrop-filter: blur(10px);
+    } */
+
+    .create-post{
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .post-title{
+        width: 90%;
+    }
+
+    .post-text{
+        width: 89%;
+    }
+
+    .plus-icon{
+        width: 25px;
+        height: 25px;
+    }
+
+    nav{
+        font-size: 9px;
+    }
+ 
+    .logo-icon{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 1em;
+    }
+
+ 
+
+}
+
+@media (max-width: 27.2em) {
+
+    
+    html{
+        font-size: 8px;
+     
+    }
+
+    #aside{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+       background-color: #292828;
+       width: 78%;
+
+       z-index: 999;
+       height: 100%;
+     
+    }
+    .plus-icon{
+        width: 25px;
+        height: 25px;
+    }
+
+  
+    .searchbar-container{
+        width: 90%;
+        padding: 0.5em 0;
+    
+
+    }
+
+ 
+    .prof-pic{
+        
+    width: 30px;
+    height: 30px;
+    }
+
+    .first-heading{
+        font-size: 1.7rem; 
+
+      }
+    
+      .second-heading{
+        font-size: 1rem; 
+
+     }
+
+     .topic-button2{
+         width: 15px;
+         height: 15px;
+         border-color: wheat;
+     }
+
+     .button-topic{
+         padding: 0.9em;
+         height: 3em;
+         margin-left: 0em;
+     }
+
+      
+     #nav{
+        font-size: 9px;
+    }
+
+ 
+
+    .post-title{
+        width: 87%;
+    }
+
+    .post-text{
+        width: 80%;
+    }
+
+    main svg{
+        width: 10px;
+        height: 10px;
+    }
+}
+

@@ -1,0 +1,303 @@
+/**/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+
+html{
+    font-size: 17px;
+}
+
+
+body{
+    background-color: #BA5D5D;
+    
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+nav{
+    display: flex;
+    color: white;
+    margin-left: 1em;
+}
+
+
+.logo-title{
+    font-size: 2rem;
+}
+
+
+
+.container{
+    width: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    background-color: #F4F4F4;
+    color:  #454343;
+    border-radius: 1em;
+    box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.25);
+
+}
+
+.headings{
+
+    margin-top: 2em;
+    
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-title{
+    font-size: 2.3rem;
+    margin-bottom: 0.1rem;
+    
+
+
+}
+
+.sub-heading{
+    margin-top: 0;
+    font-size: 0.9rem;
+    width: 60%;
+    margin-left: 2em;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.label{
+     
+    color: #454343;
+    font-size: 0.9rem;
+
+
+
+}
+
+
+
+.input:focus{
+    outline: none;
+    box-shadow: 0 0 10px #b0cde6c7;
+ }
+
+ .center-button{
+     text-align: center;
+     margin-bottom: 2em;
+
+ }
+
+input[type=submit]{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    background-color: #BA5D5D;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    padding: 0.5em 2.5em;
+    transition:  ease 0.8s;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+
+}
+
+.back{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    background-color: #292929;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    padding: 0.5em 2.5em;
+    transition:  ease 0.8s;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+}
+
+.center-button .back:hover{
+    background-color: rgb(151, 151, 151);
+    color: white;
+}
+
+
+.buttons{
+    display: flex;
+    margin-top: 20%;
+}
+
+
+
+
+.conditions{
+    font-size: 0.5rem;
+    color: #989898;
+    margin-bottom: 2em;
+    font-weight: 500;
+  
+
+}
+
+
+
+
+.block{
+    visibility: hidden;
+}
+
+/* users */
+
+.user{
+    font-weight: 400;
+   text-align: center;
+   
+}
+
+.user-img{
+   width: 3em;
+   height: 3em;
+   object-fit: cover;
+   border-radius: 100%;
+   margin-bottom: 0;
+}
+ 
+
+.name-post{
+  font-size: 1.1rem;
+
+  margin-bottom: 0;
+  margin-top: 0;
+
+}
+ 
+
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+
+
+.names{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form{
+    width: 30%;
+    
+}
+
+
+/* --- MEDIA QUERIES ---  */
+
+/* for big screens */
+@media (min-width:1900px) {
+    html{
+        font-size: 20px;
+    }
+}
+
+/* tablets */
+
+ @media (max-width:82em) {
+    html{
+        font-size: 18px;
+    }
+
+    .container{
+        width: 90%;
+
+    }
+
+}
+
+
+/* for phones or smaller screens */
+@media (max-width: 41.75em) {
+    html{
+        font-size: 10px;
+    }
+
+    .center-button{
+        display: inline-block;
+    }
+
+    input[type=text], input[type=password]{
+        width: 30em;
+    }
+
+
+     nav svg{
+        width: 60px;
+        height: 65px;
+    }
+    
+
+    .logo-title{
+        font-size: 2.4rem;
+        margin-left: 0.3em;
+    }
+
+    .container{
+        width: 90%;
+
+
+    }
+
+    .center-button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        text-align: center;
+        float: none;
+    }
+
+    .form{
+        width: 50%;
+    }
+    
+
+
+   
+
+    .back{
+        padding: 0.5em 4em;
+        margin-right: 0;
+    }
+
+    input[type=submit]{
+        margin: 0;
+    }
+
+
+} 

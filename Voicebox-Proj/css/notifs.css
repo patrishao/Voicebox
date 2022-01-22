@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body{
+    background-color: #393939;
+}
+
+.container{
+    background-color: #434343;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 3%;
+    border-radius: 1.3em;
+    
+}
+
+.holder{
+    padding: 2em 3em;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+}
+
+.title svg{
+
+    margin-right: 0.5em;
+    padding: 0;
+
+}
+
+.title h1 {
+    color: white;
+    font-family: Montserrat;
+    margin-top: 0;
+    padding: 0;
+}
+
+
+.all-notifs{
+    width: 100%;
+
+    margin-top: 0.3em;
+    color: white;
+    font-family: Nunito;
+    margin-right: 1em;
+
+    font-size: 1rem;
+ 
+    font-weight:400;
+
+
+}
+
+.notifs-nav{
+    display: none;
+
+}
+
+.logo2{
+    margin-top: 1em;
+    margin-left: 2em;
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+.logo2 svg{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.logo-title2{
+    color: white;
+    font-family: Montserrat; 
+    display: inline-block;
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+
+.notif{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.notifs-con{
+    background-color: #323232;
+    padding: 1.5em 2em;
+    border-radius: 1em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 1.5em;
+}
+
+.txts{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.txts p{
+    margin-left: 0.2em;
+    font-size: 1.1rem;
+}
+
+.txts span{
+    font-weight:600;
+}
+
+.notif-user-pic{
+    width: 4em;
+    height: 4em;
+    -o-object-fit: cover;
+    border-radius: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 1em;
+
+}
+
+
+.notif-ender{
+    margin-top: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    width: 80%;
+   
+
+}
+
+.viewed{
+    background-color: #BA5D5D;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 100%;
+    margin-right: 1em;
+
+}
+
+.top{
+    visibility: hidden;
+}
+
+.notif-ender{
+    margin-top: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    width: 80%;
+    margin:  auto;
+
+}
+
+.viewed{
+    background-color: #BA5D5D;
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 100%;
+    margin-right: 1em;
+
+}
+
+.top{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 62em) {
+
+
+    nav{
+        display: none;
+    }
+
+
+    .notifs-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+   
+
+    .container{
+        width: 95%;
+        background-color: transparent;
+    }
+    .all-notifs{
+        width: 100%;
+        height: 100%;
+        margin-top: 0em;
+
+    }
+
+    .logo2{
+        margin-bottom: 0;
+    }
+
+    .notifs-con{
+        background-color: #323232;
+        padding: 2em 2em;
+
+        margin-top: 0em;
+        margin-bottom: 2em;
+    }
+
+    
+ 
+    .x-btn{
+        margin-top: 2em;
+        margin-right: 2em;
+    }
+
+   
+    .title{
+        display: none;
+    }
+
+ 
+
+}
+
+@media screen and (max-width: 27.2em) {
+
+    html{
+        font-size: 9px;
+    }
+    
+    .x-btn svg{
+        width: 40px;
+        height: 40px;
+    }
+ 
+}

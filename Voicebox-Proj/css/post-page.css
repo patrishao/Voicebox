@@ -1,0 +1,895 @@
+
+html{
+    font-size: 16px;
+}
+
+body{
+
+    background-color: #393939;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    color: white;
+    
+}
+
+
+.container{
+    background-color: #323232;
+    width: 70%;
+    height: auto;
+   
+    margin: 0 auto;
+    margin-top: 2em;
+    box-shadow: 0px 4px 4px #000000;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* title */
+
+
+.title{
+    padding: 2em 2em 0em 2em;
+}
+
+.txts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.txt-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.txts svg{
+    margin-top: 1.9em;
+}
+
+.post-content img{
+    width: auto;
+    height: 20em;
+    margin-left: 10%;
+    margin-bottom: 1em;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* userpost */
+
+.user-post{
+    
+}
+
+.user{
+    font-weight: 400;
+    margin-left: 1.5em;
+}
+
+.user-img{
+   width: 3.5em;
+   height: 3.5em;
+   object-fit: cover;
+   border-radius: 100%;
+   float: left;
+   margin-right: 0.5em;
+
+}
+
+.name-post{
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 0;
+
+}
+
+.username-post{
+    font-size: 0.9rem;
+    margin-left: 0.4em;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+/* post contents */
+.post-title{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    width: 90%;
+    margin-left: 3em;
+    color: #FAFAFA;
+ 
+}
+
+.post-text{
+    font-size: 1rem;
+    font-weight: 400;
+    width: 88%;
+    margin-top: 0.3em;
+    margin-left: 4.5em;
+
+    color: #C2C2C2;
+}
+
+
+/* time and date */
+
+.date-time{
+    color: #7D7D7D;
+    display: flex;
+    margin-left: 2.8em;
+    font-size: 0.95rem;
+
+}
+
+.date{
+    margin-left: 3em;
+}
+
+/* post details */
+
+.post-details{
+    margin-top: 0.5em;
+    border-top: 1px solid #838383;
+    border-bottom: 1px solid #838383;
+    
+
+
+   
+}
+
+.posts{
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+
+}
+
+
+.comment, .hands-up{
+
+   display: inline-block;
+   
+    vertical-align: middle;
+    
+}
+
+.felt svg{
+    fill: white;
+    stroke: #2F2F2F;
+    stroke-width: 0.5px;
+}
+
+
+.comment svg, .hands-up svg{
+    vertical-align: middle;
+    margin-left: 0.5em;
+
+    
+    
+}
+
+.comment{
+ 
+    margin-left: 2em;
+   
+}
+
+.comment:not(:first-of-type){
+    border-top: solid 1px #838383;
+    margin-top: 1em ;
+    margin-bottom: 1em;
+}
+
+.hands-up svg{
+
+}
+
+.comment p, .hands-up p{
+    margin-left: 0em;
+    display: inline-block;
+    
+}
+
+.hands-up{
+    margin-left: 0.5em;
+}
+
+
+.topic{
+   display: flex;
+    float: right;
+    margin-right: 2em;
+    margin-top: 1em;
+ 
+}
+
+
+
+.topic-icon{
+
+    margin-right: 0.1em;
+    margin-left: 0.1em;
+
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+
+
+
+}
+
+.topic-logo{
+
+    vertical-align: middle;
+
+
+}
+
+.topic-text{
+    margin-top: 0em;
+    vertical-align: middle;
+    margin-left: 0.2em;
+}
+
+/* post comment */
+
+.user-comment{
+    
+   display: flex;
+   width: 100%;
+   margin-top: 3em;
+ 
+  justify-content: center;
+  
+
+  
+}
+
+.user-pic{
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+    border-radius: 100%;
+    display: inline-block;
+
+    
+}
+
+
+
+.text-area{
+    background-color: #232323;
+    resize: none;
+    color: white;
+    width: 45em;
+    height: 7em;
+    margin-left: 1em;
+    display: inline-block;
+    padding-left: 1em;
+    padding-top: 1em;
+    border-radius: 0.5em;
+    font-size: 0.9rem;
+
+}
+
+.reply-area{
+  
+
+    margin-right: 2em;
+    height: 1em;
+    
+    font-size: 0.8rem;
+    background-color: #232323;
+    resize: none;
+    color: white;
+
+    width: 35em;
+    position: relative;
+    margin-left: 1em;
+
+    border-radius: 0.5em;
+    font-size: 0.9rem;
+    padding: 1em 2em 1em 2em;
+
+ 
+}
+
+
+
+.reply-pic{
+    width: 2.5em;
+    height: 2.5em;
+    object-fit: cover;
+    border-radius: 100%;
+ 
+   
+}
+
+
+.reply-form{
+
+        
+    margin-top: 1em;
+    margin-left: 8%;
+    margin-right: 0;
+            
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+    
+}
+
+
+
+
+
+
+.post-comment{
+
+    border: 0 none;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+ 
+  
+}
+
+::placeholder{
+    color: #787878;
+    font-family: 'Nunito', sans-serif;
+   
+}
+
+/* comment section ! */
+
+.comment-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2em auto;
+    width: 80%;
+  
+}
+
+.commenter-pic{
+    width: 3.3em;
+    height: 3.3em;
+    object-fit: cover;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.reply-comment-end{
+    border-bottom: 1px solid #838383;
+    width: 80%;
+    margin-top: 1em;
+    margin-left: 2em;
+  
+}
+
+/* names in comment */
+.names{
+    display: inline-block;
+}
+
+.commenter-name{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+
+  
+}
+  
+  .commenter-username{
+      font-size: 0.8rem;
+      margin-left: 0.4em;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 0;
+      display: block;
+      color: #F0F0F0;
+}
+  
+
+
+
+.square{
+    margin-left: 0.5em;
+    font-size: 0.8rem;
+}
+.time{
+    font-size: 0.9rem;
+    margin-left: 0.3em;
+    font-weight: 400;
+    
+}
+
+
+/* line */
+.line{
+    border-left: 1px solid #83838380;
+    height: 2vh;
+    margin-top: 1.3em;
+    margin-left: 1.5em;
+  
+
+}
+
+
+/* comment text */
+
+.commenter-comment{
+    margin-right: 1em;
+    float: right;
+    margin-top: -1em;
+    width: 90%;
+    color: #EAEAEA;
+
+}
+
+/* comment action, reply & like */
+
+.comment-actions{
+    display: flex;
+    flex-direction: row;
+    
+    position: relative;
+    float: left;
+    margin-top: -0.5em;
+    margin-bottom: 0;
+    margin-left: 2em;
+}
+
+.reply-button{
+    border: none;
+    background-color: transparent;
+    margin-top: 1em;
+  
+}
+
+.like-button{
+    border: none;
+    
+    background-color: transparent;
+ 
+}
+
+.liked-button{
+  
+ 
+}
+
+.like-p{
+    font-size: 0.7rem;
+}
+.unliked-button{
+  
+  
+}
+
+.unlikedbutton path{
+    fill: #FF6D6D;
+    stroke: #FF6D6D;
+   
+  
+  
+}
+
+
+.liked-button {
+    margin-top: -15em;
+    
+}
+
+/* user reply */
+
+
+.reply-section{
+    margin-left: 3.5em;
+    width: 100%;
+    
+
+}
+
+
+
+
+.replier-pic{
+    width: 2.7em;
+    height: 2.7em;
+    object-fit: cover;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0.3em;
+    
+
+    
+}
+
+/* names in comment */
+.reply-names{
+
+    display: inline-block;
+}
+
+.replier-name{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 0;
+
+
+  
+}
+  
+  .replier-username{
+      font-size: 0.7rem;
+      margin-left: 0.4em;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 0;
+      display: block;
+      color: #F0F0F0;
+}
+  
+
+
+
+.square{
+    margin-left: 0.5em;
+    font-size: 0.8rem;
+}
+.reply-time{
+    font-size: 0.7rem;
+    margin-left: 0.3em;
+    font-weight: 400;
+}
+
+
+/* line */
+.reply-line{
+    border-left: 1px solid #83838380;
+    height: 2.5em;
+    margin-top: 1em;
+    margin-left: 1.5em;
+    margin-bottom: 0.5em;
+  
+
+}
+
+
+/* replier text */
+
+.replier-comment{
+    margin-right: 1em;
+    float: right;
+    margin-top: -1.4em;
+    width: 90%;
+    font-size: 0.9rem;
+    color: #EAEAEA;
+
+}
+
+/* replier action, like */
+
+.like-reply{
+    display: flex;
+    font-size: 0.8rem;
+    position: relative;
+    float: left;
+    margin-top: -0.5em;
+    margin-left: 2em;
+    vertical-align: middle;
+}
+
+button{
+    color: white;
+    cursor: pointer;
+}
+
+
+.replier-like-button{
+  
+    border: none;
+    background-color: transparent;
+}
+
+
+/* --- MEDIA QUERIES ---  */
+
+/* for big screens */
+@media (min-width:1900px) {
+    html{
+        font-size: 23px;
+       
+    }
+
+  
+
+    article svg{
+        width: 20px;
+        height: 20px;
+    }
+
+    .topic-logo, .topic-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+
+
+}
+
+
+/* small laptop screens */
+@media (max-width:64em) {
+
+    html{
+        font-size: 13px;
+       
+    }
+
+
+    
+    body{
+        background-color: #323232;
+    }
+
+    .container{
+        background: transparent;
+        box-shadow: none
+    }
+   
+
+    .container{
+        width: 90%;
+    }
+
+    .post-content img{
+        width: auto;
+        height: 15em;
+        margin-left: 15%;
+    
+    }
+    
+
+}
+
+/* for phones or smaller screens */
+@media (max-width: 41.75em) {
+
+    html{
+        font-size: 10px;
+    }
+
+    article svg{
+        width: 10px;
+        height: 10px;
+    }
+
+   .topic-icon{
+        width: 13px;
+        height: 13px;
+    }
+    .topic-logo{
+        width: 15px;
+        height: 15px;
+    }
+
+    .post-content img{
+        width: auto;
+        height: 13em;
+        margin-left: 15%;
+      
+    
+    }
+    
+
+    .reply-area{
+     
+        
+        font-size: 0.7rem;
+        float: none;
+    }
+
+    .reply-form{
+        margin-top:0em;
+        display: flex;
+        margin-left: 3em;
+        float: left;
+    }
+    .reply-pic{
+        width: 2em;
+        height: 2em;
+        object-fit: cover;
+        border-radius: 100%;
+        margin: 0;
+
+    }
+
+
+}
+
+/* much more smaller screens */
+@media (max-width: 27.2em) {
+    html{
+        font-size: 11px;
+    }
+
+    body{
+        background-color: #323232;
+    }
+
+    .post-title{
+        width: 80%;
+    }
+
+    .post-text{
+        width: 75%;
+    }
+
+    .user-post{
+        margin-left: -1.5em;
+    }
+
+
+
+    .container{
+        background: transparent;
+        box-shadow: none;
+        
+    }
+
+    .text-area{
+        width: 20em;
+    }
+
+    .reply-area{
+        width: 20em;
+        font-size: 0.7rem;
+        float: none;
+        
+    }
+
+    .reply-form{
+        margin-top: 1em;
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+        float: left;
+    }
+
+    .reply-pic{
+        width: 2em;
+        height: 2em;
+        object-fit: cover;
+        border-radius: 100%;
+        margin: 0;
+    }
+
+   
+    .arrow-pointer{
+        margin-top: -01em;
+        margin-left: -0.5em;
+        margin-right: 0.3em;
+        width: 15px;
+        height: 30px;
+    }
+
+    .commenter-comment, .replier-comment{
+        margin-right: -1em;
+    }
+
+
+    .replier-comment{
+        font-size: 0.6rem;
+    }
+
+    .comment p, .hands-up p{
+        font-size: 0.6rem;
+    }
+
+    .topic{
+        margin-top: 0.5em;
+    }
+    
+    .topic-logo{
+        width: 10px;
+        height: 10px;
+        margin-top: -0.2em;
+    }
+
+
+    .topic-text{
+        font-size: 0.6em;
+    }
+
+    .post-content img{
+        width: auto;
+        height: 13em;
+        margin-left: 15%;
+      
+    
+    }
+
+    .comment-section svg{
+        width: 8px;
+        height: 8px;
+        margin-right: -0.1em;
+        margin-top: 0.2em;
+        
+       
+    }
+
+   .topic-icon{
+        width: 9px;
+        height: 9px;
+    }
+
+     .reply-text{
+        margin-left: 0;
+        margin-right: 0; 
+    }
+   
+    .replier-pic{
+        width: 2em;
+        height: 2em;
+        margin-top: 0;
+    }
+
+    .commenter-pic{
+        width: 2em;
+        height: 2em;
+        margin-top: 0;
+    }
+   
+    .commenter-name{
+        font-size: 0.8rem;
+    }
+
+    .commenter-username{
+        font-size: 0.65rem;
+    }
+
+    .replier-name, .comment-section time{
+        font-size: 0.7rem;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+      
+      .replier-username{
+          font-size: 0.6rem;
+      }
+
+      .commenter-comment{
+        margin-right: 0em;
+      }
+
+      .commenter-comment p{
+          margin-top: 2em;
+         font-size: 0.7rem;
+
+      }
+
+      .like-reply p{
+        font-size: 0.6rem;
+      }
+
+
+
+    
+}

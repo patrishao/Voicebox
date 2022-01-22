@@ -1,0 +1,481 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+
+html{
+    font-size: 20px;
+}
+
+
+body{
+ background-color: #393939;
+ font-family: Montserrat;
+ font-weight: 400;
+ color: white;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  height: fit-content;
+}
+
+.title{
+
+
+  font-size: 1.5rem;
+  margin-left: 15%;
+  margin-top: 5%;
+
+  
+
+
+}
+
+
+.warning-alert2 {
+  background-color: #d6ac64;
+  color: #751919fd;
+  font-size: 0.8rem;
+
+  font-weight: 100;
+  text-align: none;
+
+  margin: 1em;
+  padding: 0.2em 1em;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 15px px #ccc;
+ 
+  text-align: center;
+}
+
+
+.contents{
+    background-color: #434343;
+    border: solid 1px #151515;
+    width: 60%;
+    height: fit-content;
+    padding: 3em;
+
+  
+    
+}
+
+.swal-title{
+  font-size: 0.5rem;
+}
+
+
+
+/* designing the form */
+
+form input[type=text],  form select, form textarea{
+  font-family: Nunito;
+  font-weight: 400;
+  color: white;
+  background-color: #323232;
+  border: 1px solid #595959;
+  font-size: 0.9rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+textarea{
+  resize: none;
+  padding-left: 0.5em;
+
+}
+
+/* post a title */
+
+.post-title{
+display: flex;
+flex-direction: row;
+
+}
+
+.user-img{
+  width: 5em;
+  height: 4em;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.postTitle{
+    margin: auto;
+    width: 100%;
+    margin-left: 1em;
+    height: 0;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 0.5em;
+}
+
+.img-holder{
+  background-color: #323232;
+  border: 1px solid #595959;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.2em 0.5em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.fileAttachment{
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+
+.fileAttachment svg{
+  vertical-align: middle;
+ 
+}
+
+
+
+.image{
+  width: auto;
+  height: 20em;
+  max-height: 20em;
+  margin-top: 0.5em;
+  margin-left: 1em;
+  display: none;
+  margin-bottom: 1em;
+  
+}
+
+
+.file-p{
+  font-size: 0.7rem;
+  color: #787878;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.2em;
+}
+
+
+/* write an optional text */
+
+  .textarea-container {
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+  }
+  
+  .textarea-container textarea {
+    display: block;
+    height: 15em;
+    resize: none;
+    padding-right: 0.5em;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+ 
+  }
+
+  ::placeholder{
+    color: #787878;
+ 
+  }
+
+
+
+  
+
+
+  /* choose topic */
+
+  label {
+      position: relative;
+      width: 100%;
+     
+     
+    }
+    
+    label > .icon {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      color: silver;
+      
+  
+    }
+    
+    label > select {
+      padding-left: calc(1em + 10px + 8px); /* icon width + icon padding-left + desired separation*/
+      height: 2em;
+      width: 100%;
+      padding-right: 5em;
+      color: #dbdbdb;
+
+    }
+
+ 
+   
+
+
+    
+    
+    /*
+      SVG SpriteSheet
+    */
+    
+    .spritesheet {
+      display: none;
+    }
+    
+    .icon {
+      display: inline-block;
+      width: 1em;
+      height:1em;
+      stroke-width: 0;
+      stroke: currentColor;
+      fill: currentColor;
+    }
+  
+
+    /* buttons */
+
+    .submit-buttons{
+      margin-top: 2em;
+      padding: 0%;
+    }
+
+    .submit-buttons button{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      border: none;
+      color: white;
+ 
+      font-size: 1rem;
+      border-radius: 0.5em;
+
+      float: right;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      padding: 0.5em 1.5em;
+      
+      transition:  ease 1s;
+  
+
+
+    }
+
+    .submit-buttons p{
+    
+      vertical-align: middle;
+      margin: 0;
+    }
+
+    .submit-buttons button:hover{
+      background-color: #727272;
+  
+   
+ 
+    }
+
+
+    .submit-buttons svg{
+      vertical-align: middle;
+      margin: 0;
+      padding-right: 0.1em;
+
+    
+    }
+
+
+
+    .post-btn{
+      background-color: #BA5D5D;
+      padding: 0 1em;
+      margin-left: 1em;
+    }
+
+    .back-btn{
+      background-color: #807e7e;
+      
+      padding: 0 1em;
+    }
+
+    .back-btn svg{
+      padding-right: 0.3em;
+    }
+
+    .delete-btn svg{
+      padding-right: 0.3em;
+    }
+
+    .delete-btn{
+      background-color: #000000;
+      margin-left: 1em;
+    }
+
+
+    /* footer */
+
+
+    footer{
+      margin-top: 2em;
+      font-size: 0.6rem;
+      color: #FFFFFF8C;
+
+    }
+
+
+    footer span{
+      color: white;
+      font-size: 0.5rem;
+    }
+
+  
+
+    @media (min-width:2000px) {
+
+      
+      html{
+       font-size: 30px;
+      }
+
+    }
+
+    /* small laptop screens */
+    @media (max-width:82em) {
+      .image{
+        width: auto;
+        height: 13em;
+   
+      }
+    }
+
+    /* tablets */
+    @media (max-width:62em) {
+
+      html{
+        font-size: 17px;
+       }
+
+       .fileAttachment  svg {
+        width: 20px;
+        height: 20px;
+
+      }
+
+      .fileAttachment p{
+        margin-left: 0.2em;
+      }
+
+     .image{
+      width: auto;
+      height: 10em;
+ 
+    }
+  }
+
+    
+    /* editing the colors of fonts that are white */
+    @media (max-width: 41.75em) {
+
+      html{
+        font-size: 11px;
+       }
+
+       .user-img{
+        width: 4em;
+        height: 3em;
+      }
+
+
+       .fileAttachment  svg  {
+         width: 15px;
+         height: 15px;
+
+       }
+
+       .gif-btn  svg {
+        width: 15px;
+        height: 15px;
+  
+  
+
+      }
+
+      .title{
+        margin-top: 10%;
+      }
+
+      .contents{
+        width: 70%;
+        padding: 2.5em;
+      }
+
+      .textarea-container .gif-btn{
+        margin-left: 1.5em;
+  
+    }
+      
+      .textarea-container button {
+
+        padding-left: 1em;
+    
+      }
+
+      .textarea-container textarea {
+        display: block;
+        height: 13em;
+      }
+
+      .submit-buttons{
+        display: flex;
+        
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+      }
+
+      .submit-buttons buttons{
+
+      float: none;
+        
+    
+      }
+
+      .back-btn svg{
+        width: 15px;
+        height: 15px;
+      }
+
+      .post-btn svg{
+        width: 15px;
+        height: 15px;
+      }
+
+      .post-btn{
+        margin-left: 0;
+        margin-bottom: 1em;
+        
+      }
+
+      footer{
+        text-align: center;
+        width: 70%;
+      }
+
+    }
+
+    

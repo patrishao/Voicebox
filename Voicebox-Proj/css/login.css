@@ -1,0 +1,539 @@
+/**/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+
+html{
+    font-size: 14px;
+}
+
+body{
+    background-color: #F4F4F4;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: white;
+    font-weight: 700;
+}
+
+
+.container{
+
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+
+/* logo / voicebox */
+
+aside{
+    background-color: #F4F4F4;
+    width: 40%;
+    margin: 0 2em;
+    margin-top: -13em;
+   
+}
+
+.logo-arc svg{
+    width: 90%;
+
+}
+
+@keyframes fadeIn { 
+    from { opacity: 0; } 
+  }
+  
+  .animate-flicker {
+      animation: fadeIn 1s infinite alternate;
+  }
+
+
+.chat-hover:hover{
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+/* login or main content */
+main{
+
+    background-color: #BA5D5D;
+    color: white;
+    width: 70%;
+    height: 120vh;
+    max-height: 220vh;
+
+
+
+}
+
+
+/* the first two titles */
+
+.login-arc{
+    margin-top: 10%;
+}
+
+.titles .main-title{
+    font-size: 3rem;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+
+.titles .sub-title{
+    margin-top: 0;
+    text-align: center;
+    color: #FFE6E6;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}
+
+/* third text */
+.dive-text{
+    font-size: 2.1rem;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+ /* forms */
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 3em;
+    position: relative;
+
+}
+
+
+ input[type=text],  input[type=email], input[type=password]{
+    font-family: 'Nunito', sans-serif;
+    border-radius: 0.5em;
+    box-sizing: border-box;
+    border: 2px solid #6E6868;
+    padding: 0.7em 1em;
+    font-size: 1rem;
+    width: 30em;
+    background-color: rgba(255, 255, 255, 0.9);
+ }
+
+ input[type=password]{
+     margin-bottom: 0.2em;
+ }
+
+.input:focus{
+    outline: none;
+    box-shadow: 0 0 10px #b0cde6c7;
+ }
+
+input[type=submit]{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #0A0A0A;
+    color: white;
+    margin-top: 1.5em;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 2em;
+    padding: 0.5em 3em;
+    transition:  ease 1s;
+}
+
+
+
+input[type=submit]:hover{
+
+    background-color: white;
+    color: #BA5D5D;
+    box-shadow: 2px 4px #00000025;
+
+}
+
+.center-button{
+    text-align: center;
+
+}
+
+ .email{
+    margin-bottom: 1.8em;
+    
+ }
+ 
+
+ .label{
+     
+     color: #ffffff;
+     font-size: 1.2rem;
+
+
+
+ }
+
+
+
+ .psw a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    margin-left: 0.5em;
+
+    
+    
+ }
+
+
+ .psw a:hover{
+     color: #070707;
+     font-weight: 700;
+ }
+
+
+
+ ::placeholder{
+    font-family: 'Nunito', sans-serif;
+    color: #343434;
+    font-size: 1.2rem;
+ }
+
+ .password-container{
+    position: relative;
+
+}
+
+.togglePass{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    transform: translate(-100%, -100%);
+    color: black;
+}
+
+/* animate__animated animate__bounce */
+
+/* login in with  */
+
+.loginWith-arc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5em;
+}
+
+.or{  
+     width: 33%; 
+    text-align: center; 
+    border-bottom: 1px solid #F3F3F3; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    font-family: 'Nunito', sans-serif;
+}
+
+.or span{
+    background-color: #BA5D5D;
+    padding:0 10px;
+}
+
+.button-options {
+    background-color: #F4F4F4;
+    color: #383838;
+    font-size: 1rem;
+    border-radius: 0.5em;
+    border: solid 1px black;    
+    padding: 0em 1em;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.button-options:nth-child(3){
+    padding: 0em 1.4em;
+}
+
+.button-options p{
+    display: inline-block;
+
+
+}
+
+
+
+.button-options svg{
+    text-align: center;
+    margin-right: 0.3em;
+}
+
+.button-options:hover{
+    box-shadow: 0 0 10px #000000c7;
+    border: none;
+
+
+}
+
+
+
+.no-account{
+    font-size: 1rem;
+    color: #F4F4F4;
+    font-weight: 600;
+    
+}
+
+.no-account a{
+    text-decoration:underline;
+    color: white;
+    font-weight: 400;
+}
+
+.no-account a:hover{
+    color: #000000;
+    font-style: italic;
+ 
+}
+
+footer{
+    display: none;
+}
+
+@media (min-width:2000px) {
+    html{
+        font-size: 30px;
+    }
+
+    aside{
+        margin-top: -15em;
+    }
+    
+}
+
+/* small laptop screens */
+
+@media (max-width:82em) {
+
+    html{
+        font-size: 13px;
+    }
+
+    main{
+        height: 135vh;
+
+    }
+
+    .aside{
+        margin-top: 7em;
+    }
+
+
+
+    
+}
+
+
+/* tablets */
+
+@media (max-width:62em) {
+    html{
+        font-size: 15px;
+    }
+    .container{
+       
+        flex-direction: column;
+    }
+    
+    aside{
+        width: 80%;
+        margin-top: 5em;
+        margin-left:  3em;
+
+    }
+
+    /* editing the colors of fonts that are white */
+    main{
+        width: 100%;
+        background-color: #F4F4F4;
+        color: black;
+       height: 50vh;
+    }
+
+    .titles .sub-title{
+        color: #545454;
+    }
+
+    .label{
+        color: #4A4646;
+    }
+
+    .psw a{
+        color: #3E3E3E;
+    }
+
+    .psw a:hover{
+        color: #BA5D5D;
+
+    }
+
+    input[type=submit]{
+        background: #BA5D5D;
+
+    }
+
+    input[type=submit]:hover{
+
+        background-color: black;
+        color: white;
+    }
+
+    .or{
+        border-bottom: 1px solid black; 
+    }
+
+    .or span{
+        background-color: #F4F4F4;
+    }
+
+    .button-options {
+        color: white;
+        background: #171717;
+
+    }
+
+    .button-options svg{
+        width: 25px;
+        height: 22px;
+    }
+
+    .button-options path{
+        fill: white;
+
+    }
+
+    .button-options{
+        padding: 0.1em 2em;   
+    }
+
+    .button-options:nth-child(3){
+        padding: 0.1em 2.4em;
+    }
+
+    /* rectangle below */
+    footer{
+       display: block;
+       background-color: #BA5D5D;
+       width: 100%;
+       height: 10vh;
+       max-height: 50vh;
+       margin: 0;
+   }
+
+    
+}
+
+/* for phones or smaller screens */
+@media (max-width: 41.75em) {
+
+    html{
+        font-size: 8px;
+    }
+
+  
+
+    .container{
+       
+        flex-direction: column;
+    }
+    
+    aside{
+        width: 80%;
+        margin-top: 9em;
+        margin-left: 4em;
+    
+
+    }
+
+    /* editing the colors of fonts that are white */
+    main{
+        width: 100%;
+        background-color: #F4F4F4;
+        color: black;
+       height: 50vh;
+    }
+
+    .titles .sub-title{
+        color: #545454;
+    }
+
+    .label{
+        color: #4A4646;
+    }
+
+    .psw a{
+        color: #3E3E3E;
+    }
+
+    .psw a:hover{
+        color: #BA5D5D;
+
+    }
+
+    input[type=submit]{
+        background: #BA5D5D;
+
+    }
+
+    input[type=submit]:hover{
+
+        background-color: black;
+        color: white;
+    }
+
+    .or{
+        border-bottom: 1px solid black; 
+    }
+
+    .or span{
+        background-color: #F4F4F4;
+    }
+
+    .button-options {
+        color: white;
+        background: #171717;
+
+    }
+
+    .button-options svg{
+        width: 25px;
+        height: 22px;
+    }
+
+    .button-options path{
+        fill: white;
+
+    }
+
+    .button-options{
+        padding: 0.1em 2em;   
+    }
+
+    .button-options:nth-child(3){
+        padding: 0.1em 2.4em;
+    }
+
+    /* rectangle below */
+    footer{
+       display: block;
+       background-color: #BA5D5D;
+       width: 100%;
+       height: 10vh;
+       max-height: 40vh;
+       margin: 0;
+   }
+}
